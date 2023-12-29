@@ -422,9 +422,9 @@ main {
     margin-top: 25px;
 }
 
-.s4_bottom .move{
+/* .s4_bottom .move{
     margin-bottom: 200px;
-}
+} */
 
 .train{
     float: left;
@@ -449,6 +449,7 @@ main {
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    margin-top: 200px;
 }
 
 
@@ -572,14 +573,14 @@ main {
         float: left;
 
     }
-
+/* 
     .train .move{
         margin: 0;
     }
 
     .s4_bottom .move:first-child{
         margin-bottom: 0px;
-    }
+    } */
 
     .footer_2 .contents{
         max-width: calc(100% - 80px);
@@ -789,6 +790,7 @@ main {
         justify-content: space-between;
         height: 100%;
     }
+
 
     .footer_2 .contents_1{
         width: 100%;

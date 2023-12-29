@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'munhwa_b';
-    src: url(../font/bold.ttf);
+    src: url(./font/bold.ttf);
 }
 
 @font-face {
     font-family: 'munhwa_r';
-    src: url(../font/REGULAR.ttf);
+    src: url(./font/REGULAR.ttf);
 }
 
 @font-face {
     font-family: 'notosans';
-    src: url(../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
+    src: url(./font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
 }
 
 :root {

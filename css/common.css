@@ -542,7 +542,6 @@ main {
     }
 
     .s2{
-        padding-top: 0px;
         margin-bottom: 150px;
     }
 
@@ -607,7 +606,6 @@ main {
     }
 
     .s2{
-        padding-top: 100px;
         margin-bottom: 100px;
     }
 
@@ -876,12 +874,10 @@ main {
         height: 100%;
     }
 
-    .footer_2 .contents_1{
-        width: 100%;
-    }
 
-    .footer_2 .contents_1 .f_logo{
-        width: 80%;
+
+    .footer_2 .contents_1 .f_t{
+        line-height: 110%;
     }
 
 
@@ -912,3 +908,9 @@ main {
 
 }
 
+@media screen and (max-height : 300px) {
+    .s2{
+        padding-top: 0;
+    }
+    
+}

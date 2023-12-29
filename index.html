@@ -6,65 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyeongbokgung</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/grid.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <script src="https://kit.fontawesome.com/771fe402f4.js" crossorigin="anonymous"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <style>
-        .hidden {
-            display: block;
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            border: none;
-            font-size: 0;
-            overflow: hidden;
-        }
-    </style>
+
 
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <h1>
-            <img src="./img/logo.png" alt="logo">
-            <span class="hidden">Gyeongbokgung</span>
-        </h1>
+        <div class="header_i">
+            <h1>
+                <img src="./img/logo.png" alt="logo">
+                <span class="hidden">Gyeongbokgung</span>
+            </h1>
 
-        <nav>
-            <ul>
-                <li><a href="#">경복궁 소개</a></li>
-                <li><a href="#">관람안내</a></li>
-                <li><a href="#">관람예약·신청</a></li>
-                <li><a href="#">문의하기</a></li>
-                <li><a href="#">자료실</a></li>
-                <li><a href="#">경복궁 관리소 </a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">경복궁 소개</a></li>
+                    <li><a href="#">관람안내</a></li>
+                    <li><a href="#">관람예약·신청</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">관리소 </a></li>
+                </ul>
+            </nav>
+
+            <div class="ham">
+                <i class="fa-solid fa-bars">
+                </i>
+            </div>
+        </div>
+
+        <!-- submenu -->
+
+
 
         <div class="submenu">
-             <ul>
-                <li><i class="fa-solid fa-xmark" style="color: #000000;"></i></li>
-                <li><a href="#">경복궁 소개</a></li>
-                <li><a href="#">관람안내</a></li>
-                <li><a href="#">관람예약·신청</a></li>
-                <li><a href="#">문의하기</a></li>
-                <li><a href="#">경복궁 관리소</a></li>
-             </ul>
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-xmark" style="color: #000000;"></i></li>
+                    <li><a href="#">경복궁 소개</a></li>
+                    <li><a href="#">관람안내</a></li>
+                    <li><a href="#">관람예약·신청</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">경복궁 관리소</a></li>
+                </ul>
+            </nav>
         </div>
-<!-- 
-        <div class="ham">
-            <i class="fa-solid fa-bars" style="color: #000000;">
-            </i>        
-        </div> -->
+        <!-- //submenu-->
+
+
     </header>
     <!-- //header -->
 
     <!-- video -->
     <div class="video">
-        <video src="./video/g_1.mp4" loop  muted autoplay style="width: 100%;"></video>
+        <video src="./video/g.mp4" loop muted autoplay style="width: 100%;"></video>
     </div>
     <!-- //video -->
 
@@ -93,7 +93,7 @@
         <div class="container info">
             <div class="row">
 
-                <div class="col-6 col-xl-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_t">
                     <div class="box time">
                         <i class="fa-solid fa-clock" style="color: #ffffff;"></i>
                         <h5 class="info_title">관람요금 및 시간</h5>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-xl-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_r">
                     <div class="box rule">
                         <i class="fa-solid fa-calendar-check" style="color: #ffffff;"></i>
                         <h5 class="info_title">관람규칙</h5>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-xl-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_u">
                     <div class="box use">
                         <i class="fa-solid fa-camera" style="color: #ffffff;"></i>
                         <h5 class="info_title">촬영 및 장소 사용</h5>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-xl-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_c">
                     <div class="box comment">
                         <i class="fa-solid fa-headset" style="color: #ffffff;"></i>
                         <h5 class="info_title">해설 안내</h5>
@@ -172,7 +172,7 @@
             <div class="container s2_c1">
                 <div class="row">
 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-lg-6 col-xl-6">
                         <div class="c2_img">
                             <figure>
                                 <img src="./img/s2_c1.jpg" alt="s2_c1">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-lg-6 col-xl-6">
                         <div class="s2_t">
                             <h5>궁궐의 부엌인 '소주방'</h5>
                             <p>
@@ -200,7 +200,7 @@
             <!-- s2_c2 -->
             <div class="container s2_c2">
                 <div class="row">
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-lg-6 col-xl-6">
                         <div class="c2_img">
                             <figure>
                                 <img src="./img/s2_c2.jpg" alt="s2_c2">
@@ -208,7 +208,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-lg-6 col-xl-6">
                         <div class="s2_t">
                             <h5>도시락의 옛말, '도슭'</h5>
                             <p>
@@ -230,15 +230,15 @@
             <div class="container s2_c3">
                 <div class="row">
 
-                    <div class="col-12 col-xl-6">
-                        <div class="c3_img">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="c2_img">
                             <figure>
                                 <img src="./img/s2_c3.jpg" alt="s2_c3">
                             </figure>
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-lg-6 col-xl-6">
                         <div class="s2_t">
                             <h5>야간해설탐방</h5>
                             <p>
@@ -286,7 +286,7 @@
             <div class="container s3_c">
                 <div class="row">
 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-lg-6 col-xl-6">
                         <div class="s3_c1">
                             <p>초두점 증병 세트</p>
 
@@ -297,7 +297,7 @@
                     </div>
 
 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12  col-lg-6 col-xl-6">
                         <div class="s3_c2">
                             <p>주악 세트</p>
 
@@ -322,16 +322,16 @@
             <div class="container s4_top">
                 <div class="row">
 
-                    <div class="col-12 col-xl-6 box">
-                        <div class="hr-sect">수문장 교대 행사</div>
+                    <div class="col-12 col-lg-6 col-xl-6 box">
+                        <div class="hr-sect door">수문장 교대 행사</div>
                         <h2 class="hidden">event</h2>
                         <figure>
                             <img src="./img/s4_c1.jpg" alt="s4_c1">
                         </figure>
                     </div>
 
-                    <div class="col-12 col-xl-6 box">
-                        <div class="hr-sect">공지사항</div>
+                    <div class="col-12 col-lg-6 col-xl-6 box">
+                        <div class="hr-sect noti">공지사항</div>
                         <table class="s4_noti">
                             <tr>
                                 <td>2023.12.21(목) 기상청 한파 경보에 따른 경복궁 정규 해설 운영 조정 알림</td>
@@ -369,8 +369,8 @@
             <div class="container s4_bottom">
                 <div class="row">
 
-                    <div class="col-12 col-xl-6 box">
-                        <div class="hr-sect">알림판</div>
+                    <div class="col-12 col-lg-6 col-xl-6 box">
+                        <div class="hr-sect board">알림판</div>
                         <div class="s4_c3">
                             <figure>
                                 <img src="./img/s4_c3_01.jpg" alt="s4_c3_01">
@@ -394,18 +394,28 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-6 box">
-                        <div class="hr-sect">찾아오시는 길</div>
-                        <!-- * 카카오맵 - 지도퍼가기 -->
-                        <div
-                            style="font:normal normal 400 12px/normal dotum, sans-serif; color:#333; position:relative">
-                            <div>
-                                <a href="https://map.kakao.com/?urlX=494898.0&amp;urlY=1132796.0&amp;itemId=18619553&amp;q=%EA%B2%BD%EB%B3%B5%EA%B6%81&amp;srcid=18619553&amp;map_type=TYPE_MAP&amp;from=roughmap"
-                                    target="_blank">
-                                    <img class="map"
-                                        src="http://t1.daumcdn.net/roughmap/imgmap/8b8763f674ff650dce1f181e2ef82a7ca35fa8bc05c18fabb8cf4d7701ae3011"
-                                        alt="kakaomap">
-                                </a>
+                    <div class="col-12 col-lg-6 col-xl-6 box">
+                        <div class="hr-sect road">찾아오시는 길</div>
+                        <!-- 지도퍼가기 -->
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.957385385409!2d126.97217545385354!3d37.57962115150389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1703732512182!5m2!1sko!2skr" >
+                            </iframe>
+                        </div>
+
+                        <div class="co-xl-3 train">
+                            지하철<br>
+                            <div class="move">
+                                3호선 경복궁역 5번출구에서 5분 거리<br>
+                                5호선 광화문역 2번출구에서 10분 거리
+                            </div>
+                        </div>
+                        <div class="co-xl-3 bus">
+                            버스<br>
+                            <div class="move">
+                                경복궁 남측 : 109, 171, 272, 601, 606, 1020 7025<br>
+                                경복궁 서측 : 1020, 1711, 7016, 7018, 7022<br>
+                                7212, 6011, 9703
                             </div>
                         </div>
 
@@ -421,37 +431,45 @@
 
     <!-- footer_1 -->
     <div class="footer_1">
-        <h6>개인정보처리</h6>
-        <h6>저작권정책</h6>
-        <h6>개인정보침해신고센터</h6>
+        <div class="footer1_t">
+            <h6>개인정보처리</h6>
+            <h6>저작권정책</h6>
+            <h6>개인정보침해신고센터</h6>
+        </div>
     </div>
     <!-- //footer_1 -->
 
     <!-- footer_2 -->
     <div class="footer_2">
-        <div class="f_logo">
-            <figure>
-                <img src="./img/f_logo.png" alt="f_logo">
-            </figure>
-        </div>
+        <div class="contents">
+            <div class="contents_1">
+                <div class="f_logo">
+                    <figure>
+                        <img src="./img/f_logo.png" alt="f_logo">
+                    </figure>
+                </div>
 
-        <div class="f_t">
-            <h6 class="hidden">location</h6>
-            <p>
-                우)03045 서울특별시 종로구 사직로 161 전화번호(02) 3700-3900 팩스(02) 700-3909<br>
-                COPYRIGHT 2014 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.</p>
-        </div>
+                <div class="f_t">
+                    <h6 class="hidden">location</h6>
+                    <p>
+                        우)03045 서울특별시 종로구 사직로 161 전화번호(02) 3700-3900 팩스(02) 700-3909<br>
+                        COPYRIGHT 2014 BY GYEONGBOKGUNG. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
 
-        <div class="icon">
-                <figure>
-                    <img src="./img/twitter.png" alt="twitter">
-                </figure>
+            <div class="contents_2">
+                <div class="icon">
+                    <figure>
+                        <img src="./img/twitter.png" alt="twitter">
+                    </figure>
 
-                <figure>
-                    <img src="./img/instagram.png" alt="instagram">
-                </figure>
+                    <figure>
+                        <img src="./img/instagram.png" alt="instagram">
+                    </figure>
 
-            <button class="museum" type="button">관련 박물관 바로가기</button>
+                    <button class="museum" type="button">관련 박물관 바로가기</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- //footer_2 -->

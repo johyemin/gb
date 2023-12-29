@@ -192,7 +192,7 @@ header nav ul li:last-child {
 
 main {
     width: 100%;
-    height: 50vh;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -537,9 +537,9 @@ main {
     }
     
 
-    main{
+    /* main{
         height: 30vh;
-    }
+    } */
 
     .s2{
         margin-bottom: 150px;
@@ -600,10 +600,10 @@ main {
     .info .b_t{
         margin-bottom: 20px;
     }
-
+/* 
     main{
         height: 30vh;
-    }
+    } */
 
     .s2{
         margin-bottom: 100px;
@@ -908,7 +908,8 @@ main {
 
 }
 
-@media screen and (max-height : 300px) {
+@media screen and (max-height:400px) {
+
     .s2{
         padding-top: 0;
     }

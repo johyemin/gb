@@ -748,6 +748,10 @@ main {
     }
 
 
+    .footer_1 .footer1_t h6{
+        font-size: 0.8rem;
+    }
+    
     .footer_2 .contents {
         width: calc(100% - 40px);
         margin: 0 auto;
@@ -762,8 +766,10 @@ main {
         display: none;
     }
 
-
-
+    .footer_2 .contents_1 .f_t p{
+        font-size: 0.8rem;
+    }
+    
     .footer_2 .contents_2 {
         display: none;
     }
@@ -861,6 +867,11 @@ main {
         margin-top: 30px;
     }
 
+    .section_04 .s4 .s4_top .hr-sect {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 
     .map_text {
         display: flex;
@@ -873,6 +884,11 @@ main {
     .map_text .train, .bus{
         font-weight: bold;
         font-size: 1rem;
+    }
+
+    
+    .footer_1 .footer1_t h6{
+        font-size: 0.8rem;
     }
 
     .footer_2 .contents {
@@ -888,6 +904,10 @@ main {
 
     .footer_2 .contents_1 {
         width: 100%;
+    }
+
+    .footer_2 .contents_1 .f_t p{
+        font-size: 0.8rem;
     }
 
     .footer_2 .contents_2 {

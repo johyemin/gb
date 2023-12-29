@@ -493,6 +493,7 @@ main {
 .footer_2 .icon {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -769,7 +770,7 @@ main {
     .footer_2 .contents_1 .f_t p{
         font-size: 0.8rem;
     }
-    
+
     .footer_2 .contents_2 {
         display: none;
     }

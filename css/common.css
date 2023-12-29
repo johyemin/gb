@@ -248,7 +248,6 @@ main {
 }
 
 .season {
-    width: 1140px;
     height: 500px;
     margin-bottom: 21vh;
     overflow: hidden;
@@ -270,7 +269,6 @@ main {
     background-size: cover;
     color: #fff;
     margin-bottom: 150px;
-    padding-top: 100px;
 }
 
 
@@ -280,7 +278,6 @@ main {
 }
 
 .s2 p {
-    padding-bottom: 160px;
     font-family: var(--text);
     font-size: 1.125rem;
 }
@@ -422,15 +419,11 @@ main {
     margin-top: 25px;
 }
 
-/* .s4_bottom .move{
-    margin-bottom: 200px;
-} */
 
-.train{
-    float: left;
-}
-.bus{
-    float: right;
+.map_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -479,10 +472,6 @@ main {
     align-items: center;
     justify-content: space-between;
 
-}
-
-.footer_2 .contents_1 .f_logo{
-    width: 30%;
 }
 
 
@@ -568,19 +557,6 @@ main {
     .s3_banner h5{
         padding-left: 200px;
     }
-
-    .s4_bottom .bus{
-        float: left;
-
-    }
-/* 
-    .train .move{
-        margin: 0;
-    }
-
-    .s4_bottom .move:first-child{
-        margin-bottom: 0px;
-    } */
 
     .footer_2 .contents{
         max-width: calc(100% - 80px);
@@ -831,6 +807,13 @@ main {
         line-height: 80px;
     }
 
+    main p{
+        padding: 0 15px;
+    }
+    main p br{
+        display: none;
+    }
+
     .info .b_t{
         margin-bottom: 20px;
     }
@@ -843,8 +826,15 @@ main {
         margin-bottom: 20px;
     }
 
+    .section_02 .s2 p{
+        padding: 0 15px;
+    }
     .s2{
         margin-bottom: 100px;
+    }
+
+    .s2 p br{
+        display: none;
     }
 
     .section_02 .s2_t{
@@ -897,6 +887,11 @@ main {
 
     .footer_2 .contents_2{
         display: none;
+    }
+
+    .p_15{
+        padding-left: 0;
+        padding-right: 0;
     }
     
 }

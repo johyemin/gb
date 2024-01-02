@@ -62,7 +62,7 @@ td {
     text-overflow: ellipsis;
     margin-bottom: 20px;
     vertical-align: middle;
-    text-align: center;
+
 }
 
 td:first-child {
@@ -91,7 +91,6 @@ p {
 }
 
 video {
-    width: 100%;
     display: block
 }
 
@@ -171,13 +170,13 @@ header nav ul li:last-child {
     text-align: center;
 }
 
-.submenu nav ul{
+.submenu nav ul {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.submenu nav ul li{
+.submenu nav ul li {
     width: 100%;
     height: 85px;
     margin: 0;
@@ -191,7 +190,8 @@ header nav ul li:last-child {
     color: #fff;
 }
 
-.submenu ul li:nth-child(2) {    background-color: #E9BC64;
+.submenu ul li:nth-child(2) {
+    background-color: #E9BC64;
     color: #fff;
 }
 
@@ -209,6 +209,7 @@ header nav ul li:last-child {
     background-color: #333;
     color: #fff;
 }
+
 /* //submenu */
 
 /* season */
@@ -227,6 +228,11 @@ main {
     margin-bottom: 100px;
     line-height: 250%;
     position: relative;
+}
+
+main p {
+    font-size: 2rem;
+    line-height: 180%;
 }
 
 .section_01 {
@@ -394,8 +400,6 @@ main {
     height: 100%;
 }
 
-/* height 300 안 들어감 */
-
 .section_04 .s4 .s4_top .box {
     margin-bottom: 100px;
     width: 100%;
@@ -477,7 +481,7 @@ main {
 
 .footer_2 {
     width: 100%;
-    /* height: 270px; */
+    height: 270px;
     background-color: #333;
     color: #fff;
     font-family: 'Noto Sans KR', sans-serif;
@@ -564,12 +568,21 @@ main {
         justify-content: space-between;
     }
 
+    main p {
+        font-size: 1.5rem;
+    }
+
     .s2 {
         margin-bottom: 150px;
     }
 
     .s2 p {
         padding-bottom: 0;
+    }
+
+    .section_02 .s2 .s2_t p br {
+        display: none;
+
     }
 
     .s3_banner {
@@ -607,27 +620,15 @@ main {
     }
 
     header .header_i nav {
-        display:none;
+        display: none;
     }
 
     /* sub nav */
-    header .submenu{
-        display: block;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        z-index: 99;
-    }
-
-    /* header .submenu nav{
-        width: 100%;
-    } */
-
 
 
     /* //sub nav */
 
-    .video{
+    .video {
         position: relative;
         top: 80px;
     }
@@ -638,6 +639,10 @@ main {
         color: #000;
         line-height: 80px;
         cursor: pointer;
+    }
+
+    main p {
+        font-size: 1.5rem;
     }
 
     .info .b_t {
@@ -744,7 +749,7 @@ main {
         display: none;
     }
 
-    .video{
+    .video {
         position: relative;
         top: 80px;
     }
@@ -759,17 +764,8 @@ main {
         cursor: pointer;
     }
 
-    header .submenu{
-        display: block;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        z-index: 999;
-    }
-
-
-    .main{
-        position: relative;
+    main p {
+        font-size: 1.2rem;
     }
 
     .info .b_t {
@@ -784,6 +780,11 @@ main {
         padding: 0px;
     }
 
+
+    .s3_banner .s3_bannerI {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .section_03 .s3_c .s3_c1 p {
         margin-bottom: 30px;
@@ -807,10 +808,10 @@ main {
     }
 
 
-    .footer_1 .footer1_t h6{
+    .footer_1 .footer1_t h6 {
         font-size: 0.8rem;
     }
-    
+
     .footer_2 .contents {
         width: calc(100% - 40px);
         margin: 0 auto;
@@ -821,12 +822,17 @@ main {
         height: 100%;
     }
 
-    .footer_2 .f_logo{
+    .footer_2 .f_logo {
         display: none;
     }
 
-    .footer_2 .contents_1 .f_t p{
+    .footer_2 .contents_1 .f_t p {
         font-size: 0.8rem;
+    }
+
+    .footer_2 .contents .contents_1 {
+        text-align: center;
+        margin: auto;
     }
 
     .footer_2 .contents_2 {
@@ -853,13 +859,13 @@ main {
         justify-content: space-between;
     }
 
-    header .header_i h1{
+    header .header_i h1 {
         width: 150px;
         height: 100%;
         padding-top: 5px;
     }
 
-    header .header_i .ham{
+    header .header_i .ham {
         font-size: 1.4rem;
     }
 
@@ -867,7 +873,7 @@ main {
         display: none;
     }
 
-    .video{
+    .video {
         position: relative;
         top: 50px;
     }
@@ -882,7 +888,9 @@ main {
     }
 
     main p {
-        padding: 0 15px;
+        font-size: 1.3rem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     main p br {
@@ -919,7 +927,7 @@ main {
 
     .s3_banner h5 {
         font-size: 1.3rem;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     .section_03 .s3_c .s3_c1 p {
@@ -948,12 +956,13 @@ main {
         padding-right: 15px;
     }
 
-    .section_04 .s4_top .s4_noti td:first-child{
+    .section_04 .s4_top .s4_noti td:first-child {
         padding-left: 10px;
         padding-right: 10px;
         width: 300px;
     }
-    .section_04 .s4_top .s4_noti{
+
+    .section_04 .s4_top .s4_noti {
         width: 95%;
         margin: 0 auto;
         margin-left: 15px;
@@ -968,28 +977,25 @@ main {
 
     }
 
-    .map_text .train, .bus{
+    .map_text .train,
+    .bus {
         font-weight: bold;
         font-size: 1rem;
     }
 
-    .map_text .move{
+    .map_text .move {
         font-weight: 400;
     }
 
-    
-    .footer_1 .footer1_t h6{
+
+    .footer_1 .footer1_t h6 {
         font-size: 0.8rem;
     }
 
-    .footer_2 .contents {
-        /* max-width: calc(100% - 40px); */
-        /* margin: auto; */
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+
+    .footer_2 .contents .contents_1 {
+        text-align: center;
+        margin: auto;
     }
 
 
@@ -997,7 +1003,7 @@ main {
         width: 100%;
     }
 
-    .footer_2 .contents_1 .f_t p{
+    .footer_2 .contents_1 .f_t p {
         font-size: 0.8rem;
     }
 
@@ -1010,7 +1016,7 @@ main {
         font-size: 0.4rem;
     }
 
-    .footer_2 .f_logo{
+    .footer_2 .f_logo {
         display: none;
     }
 
@@ -1043,46 +1049,52 @@ main {
         justify-content: space-between;
     }
 
-    header .header_i h1{
+    header .header_i h1 {
         width: 150px;
         height: 100%;
         padding-top: 5px;
     }
 
-    .video{
+    main p {
+        font-size: 1rem;
+    }
+
+    .video {
         position: relative;
         top: 50px;
     }
 
-    .s2 p{
+    .s2 p {
         font-size: 0.85rem;
     }
 
-    .section_02 .s2_t h5{
-        font-size: 1.3rem;        margin-bottom: 30px;
+    .section_02 .s2_t h5 {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
     }
 
-    .section_02 .s2_t p{
-        font-size: 0.75rem;        
+    .section_02 .s2_t p {
+        font-size: 0.75rem;
     }
 
-    .s3_banner h5{
+    .s3_banner h5 {
         padding-left: 0px;
         font-size: 1.4rem;
         line-height: 200%;
 
     }
 
-    .section_03 .s3_c .s3_t h5{
+    .section_03 .s3_c .s3_t h5 {
         font-size: 1.3rem;
     }
 
-    .section_04 .s4_top .s4_noti td:first-child{
+    .section_04 .s4_top .s4_noti td:first-child {
         padding-left: 10px;
         padding-right: 10px;
         width: 300px;
     }
-    .section_04 .s4_top .s4_noti{
+
+    .section_04 .s4_top .s4_noti {
         width: 95%;
         margin: 0 auto;
         margin-left: 15px;
@@ -1115,7 +1127,7 @@ main {
     .footer_1 h6 {
         font-size: 0.7rem;
     }
-    
+
     .footer_2 .contents {
         /* max-width: calc(100% - 40px); */
         /* margin: auto; */

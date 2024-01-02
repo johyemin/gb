@@ -154,6 +154,11 @@ header nav ul li:last-child {
     margin-right: 0;
 }
 
+.video{
+   width: 100%;
+   overflow: hidden;
+}
+
 /* submenu */
 .ham {
     display: none;

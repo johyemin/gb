@@ -61,6 +61,8 @@ td {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 td:first-child {
@@ -153,33 +155,52 @@ header nav ul li:last-child {
     margin-right: 0;
 }
 
+/* submenu */
 .ham {
     display: none;
 }
 
 .submenu {
-    width: 275px;
-    height: 85px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
     display: none;
+    right: 0;
+    top: 80px;
+    text-align: center;
 }
 
-.submenu ul li:nth-child(2) {
+.submenu nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submenu nav ul li{
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+}
+
+.submenu ul li:nth-child(1) {
     background-color: #B15E58;
     color: #fff;
 }
 
-.submenu ul li:nth-child(3) {
-    background-color: #E9BC64;
+.submenu ul li:nth-child(2) {    background-color: #E9BC64;
     color: #fff;
 }
 
-.submenu ul li:nth-child(4) {
+.submenu ul li:nth-child(3) {
     background-color: #003668;
     color: #fff;
 }
 
-.submenu ul li:nth-child(5) {
+.submenu ul li:nth-child(4) {
     background-color: #4E8158;
     color: #fff;
 }
@@ -188,7 +209,11 @@ header nav ul li:last-child {
     background-color: #333;
     color: #fff;
 }
+/* //submenu */
 
+/* season */
+
+/* //season */
 
 main {
     width: 100%;
@@ -201,6 +226,7 @@ main {
     text-align: center;
     margin-bottom: 100px;
     line-height: 250%;
+    position: relative;
 }
 
 .section_01 {
@@ -326,7 +352,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #564545;
+    color: #5b4036;
     margin-bottom: 100px;
     overflow: hidden;
 }
@@ -520,7 +546,7 @@ main {
 }
 
 
-@media screen and (min-width:992px) and (max-width:1199px) {
+@media screen and (min-width:991px) and (max-width:1199px) {
 
     header {
         width: 100%;
@@ -537,11 +563,6 @@ main {
         align-items: center;
         justify-content: space-between;
     }
-
-
-    /* main{
-        height: 30vh;
-    } */
 
     .s2 {
         margin-bottom: 150px;
@@ -585,26 +606,43 @@ main {
         justify-content: space-between;
     }
 
-    header nav {
-        display: none;
+    header .header_i nav {
+        display:none;
     }
 
+    /* sub nav */
+    header .submenu{
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 99;
+    }
+
+    /* header .submenu nav{
+        width: 100%;
+    } */
+
+
+
+    /* //sub nav */
+
+    .video{
+        position: relative;
+        top: 80px;
+    }
 
     .ham {
         display: block;
         font-size: 2rem;
         color: #000;
         line-height: 80px;
+        cursor: pointer;
     }
 
     .info .b_t {
         margin-bottom: 20px;
     }
-
-    /* 
-    main{
-        height: 30vh;
-    } */
 
     .s2 {
         margin-bottom: 100px;
@@ -706,12 +744,32 @@ main {
         display: none;
     }
 
+    .video{
+        position: relative;
+        top: 80px;
+    }
+
+
 
     .ham {
         display: block;
         font-size: 2rem;
         color: #000;
         line-height: 80px;
+        cursor: pointer;
+    }
+
+    header .submenu{
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 999;
+    }
+
+
+    .main{
+        position: relative;
     }
 
     .info .b_t {
@@ -781,8 +839,9 @@ main {
 @media screen and (max-width:575px) {
     header {
         width: 100%;
-        height: 60px;
+        height: 50px;
         background-color: #fff;
+        margin-bottom: 0;
     }
 
     header .header_i {
@@ -797,6 +856,7 @@ main {
     header .header_i h1{
         width: 150px;
         height: 100%;
+        padding-top: 5px;
     }
 
     header .header_i .ham{
@@ -807,12 +867,18 @@ main {
         display: none;
     }
 
+    .video{
+        position: relative;
+        top: 50px;
+    }
+
 
     .ham {
         display: block;
         font-size: 2rem;
         color: #000;
         line-height: 80px;
+        cursor: pointer;
     }
 
     main p {
@@ -882,6 +948,17 @@ main {
         padding-right: 15px;
     }
 
+    .section_04 .s4_top .s4_noti td:first-child{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 300px;
+    }
+    .section_04 .s4_top .s4_noti{
+        width: 95%;
+        margin: 0 auto;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     .map_text {
         display: flex;
@@ -950,6 +1027,71 @@ main {
 }
 
 @media screen and (max-width:400px) {
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        margin-bottom: 0;
+    }
+
+    header .header_i {
+        width: calc(100% - 32px);
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .header_i h1{
+        width: 150px;
+        height: 100%;
+        padding-top: 5px;
+    }
+
+    .video{
+        position: relative;
+        top: 50px;
+    }
+
+    .s2 p{
+        font-size: 0.85rem;
+    }
+
+    .section_02 .s2_t h5{
+        font-size: 1.3rem;        margin-bottom: 30px;
+    }
+
+    .section_02 .s2_t p{
+        font-size: 0.75rem;        
+    }
+
+    .s3_banner h5{
+        padding-left: 0px;
+        font-size: 1.4rem;
+        line-height: 200%;
+
+    }
+
+    .section_03 .s3_c .s3_t h5{
+        font-size: 1.3rem;
+    }
+
+    .section_04 .s4_top .s4_noti td:first-child{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 300px;
+    }
+    .section_04 .s4_top .s4_noti{
+        width: 95%;
+        margin: 0 auto;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 333.2px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
     .s4_bottom .bus {
         float: left;
 
@@ -964,6 +1106,7 @@ main {
         padding-left: 15px;
         padding-right: 15px;
     }
+
 
     .train .move {
         margin: 0;

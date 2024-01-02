@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/771fe402f4.js" crossorigin="anonymous"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/common.js"></script>
+    <script src="./js/common.js" defer></script>
 
 
 
@@ -44,16 +44,16 @@
 
         <!-- submenu -->
         <div class="submenu">
-            <nav>
+            <div class="close">
+                <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+            </div>
                 <ul>
-                    <!-- <li><i class="fa-solid fa-xmark" style="color: #000000;"></i></li> -->
                     <li><a href="#">경복궁 소개</a></li>
                     <li><a href="#">관람안내</a></li>
                     <li><a href="#">관람예약·신청</a></li>
                     <li><a href="#">문의하기</a></li>
                     <li><a href="#">경복궁 관리소</a></li>
                 </ul>
-            </nav>
         </div>
         <!-- //submenu-->
 
@@ -63,7 +63,7 @@
 
     <!-- video -->
     <div class="video">
-        <video src="./video/g.mp4" loop muted autoplay playsinline style="width: 100%;"></video>
+        <video src="./video/g.mp4" loop muted autoplay playsinline></video>
     </div>
     <!-- //video -->
 
@@ -92,7 +92,7 @@
         <div class="container info">
             <div class="row">
 
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_t">
+                <div class="col-6 col-lg-3 col-xl-3 b_t">
                     <div class="box time">
                         <i class="fa-solid fa-clock" style="color: #ffffff;"></i>
                         <h5 class="info_title">관람요금 및 시간</h5>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_r">
+                <div class="col-6 col-lg-3 col-xl-3 b_r">
                     <div class="box rule">
                         <i class="fa-solid fa-calendar-check" style="color: #ffffff;"></i>
                         <h5 class="info_title">관람규칙</h5>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_u">
+                <div class="col-6 col-lg-3 col-xl-3 b_u">
                     <div class="box use">
                         <i class="fa-solid fa-camera" style="color: #ffffff;"></i>
                         <h5 class="info_title">촬영 및 장소 사용</h5>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 b_c">
+                <div class="col-6 col-lg-3 col-xl-3 b_c">
                     <div class="box comment">
                         <i class="fa-solid fa-headset" style="color: #ffffff;"></i>
                         <h5 class="info_title">해설 안내</h5>

@@ -585,9 +585,8 @@ main p {
         padding-bottom: 0;
     }
 
-    .section_02 .s2 .s2_t p br {
+    .s2_t br {
         display: none;
-
     }
 
     .s3_banner {

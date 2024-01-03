@@ -499,7 +499,7 @@ main p {
 }
 
 .footer_2 .contents {
-    width: calc(100% - 80px);
+    width: calc(100% - 320px);
     height: 100%;
     margin: 0 auto;
     display: flex;

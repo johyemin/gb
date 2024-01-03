@@ -928,6 +928,10 @@ main p {
         display: none;
     }
 
+    .s2_t br {
+        display: none;
+    }
+
     .section_02 .s2_t {
         padding: 0px;
     }
@@ -1069,6 +1073,10 @@ main p {
     .video {
         position: relative;
         top: 50px;
+    }    
+    
+    .s2_t br {
+        display: none;
     }
 
     .s2 p {

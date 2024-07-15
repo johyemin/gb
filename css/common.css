@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+button{
+    color: #000;
+}
+
 ul,
 li {
     list-style: none;
@@ -33,9 +37,6 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-}
-button{
-    color: #000;
 }
 
 figure {
@@ -141,6 +142,8 @@ header .header_i {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
+
 }
 
 
@@ -404,6 +407,7 @@ main p {
 /* section 04 */
 
 .section_04 .s4 .s4_top .box {
+    margin-bottom: 180px;
     width: 100%;
     height: 300px;
 }
@@ -413,16 +417,6 @@ main p {
     height: 100%;
 }
 
-.section_04 .s4 .s4_top .box {
-    margin-bottom: 100px;
-    width: 100%;
-    height: 300px;
-}
-
-.s4_top figure img {
-    width: 100%;
-    height: 100%;
-}
 
 .s4_top .s4_noti {
     width: 100%;
@@ -502,7 +496,7 @@ main p {
 }
 
 .footer_2 .contents {
-    width: calc(100% - 320px);
+    width: calc(100% - 160px);
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -537,19 +531,9 @@ main p {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.footer_2 .icon figure {
-    width: 30px;
-    height: 30px;
-}
-
-.footer_2 .icon .contents_i figure {
-    width: 40px;
-    height: 40px;
-
-}
 
 .footer_2 .icon .museum {
     width: 227px;
@@ -601,7 +585,13 @@ main p {
         margin-bottom: 150px
     }
 
+    .footer_2 .contents_1{
+        width: 80%;
+    }
 
+    .footer_2 .contents_2 {
+        width: 20%;
+    }
 
     .footer_2 .contents {
         max-width: calc(100% - 80px);
@@ -611,8 +601,17 @@ main p {
         justify-content: space-between;
         height: 100%;
     }
+    .footer_2 .icon
+    {
+        justify-content: flex-end;
+    }
+    .footer_2 .icon .museum{
+        width: 150px;
+    }
+    
 
 }
+
 
 @media screen and (min-width:768px) and (max-width:991px) {
 
@@ -701,6 +700,9 @@ main p {
         margin-top: 30px;
     }
 
+    .section_04 .s4_bottom .board{
+        margin-bottom: 60px;
+    }
 
     .s4_top figure img {
         width: 100%;
@@ -717,26 +719,24 @@ main p {
         height: 100%;
     }
 
-    .footer_2 .icon figure {
-        display: none;
-    }
-
     .footer_2 .contents {
-        max-width: calc(100% - 40px);
-        margin: auto;
+        width: calc(100% - 40px);
+        height: 100%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100%;
     }
 
     .footer_2 .contents_1 {
         width: 85%;
+        justify-content: flex-start;
     }
 
     .footer_2 .contents_2 {
         width: 15%;
     }
+    
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -850,6 +850,24 @@ main p {
     }
 
 
+}
+
+@media screen and (max-width : 768px) {
+    .footer_2 .contents_1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_2 .contents .contents_1 {
+        display: flex;
+        align-content: center;
+    }
+
+    .footer_2 .f_t {
+        margin: auto;
+    }
+    
 }
 
 @media screen and (max-width:575px) {
@@ -1114,10 +1132,10 @@ main p {
 
     .section_04 .s4_top .s4_noti {
         width: 95%;
-        margin: 0 auto;
-        margin-left: 15px;
-        margin-right: 15px;
-        width: 333.2px;
+        margin: auto;
+        /* margin-left: 15px;
+        margin-right: 15px; */
+        /* width: 333.2px; */
         font-size: 0.8rem;
         font-weight: 600;
     }
